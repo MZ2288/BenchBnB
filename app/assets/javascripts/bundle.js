@@ -50,9 +50,10 @@
 	    Route = __webpack_require__(159).Route,
 	    App = __webpack_require__(210),
 	    Index = __webpack_require__(235),
+	    Search = __webpack_require__(236),
 	    BenchStore = __webpack_require__(211),
 	    ApiUtil = __webpack_require__(232),
-	    routes = React.createElement(Route, { path: '/', component: Index });
+	    routes = React.createElement(Route, { path: '/', component: Search });
 
 	document.addEventListener("DOMContentLoaded", function () {
 	  ReactDOM.render(React.createElement(
@@ -31234,6 +31235,29 @@
 	});
 
 	module.exports = Index;
+
+/***/ },
+/* 236 */
+/***/ function(module, exports, __webpack_require__) {
+
+	var React = __webpack_require__(1);
+	var Map = __webpack_require__(!(function webpackMissingModule() { var e = new Error("Cannot find module \"./map\""); e.code = 'MODULE_NOT_FOUND'; throw e; }()));
+	var Index = __webpack_require__(235);
+
+	var Search = React.createClass({
+	  displayName: 'Search',
+
+	  render: function () {
+	    return React.createElement(
+	      'div',
+	      null,
+	      React.createElement(Map, null),
+	      React.createElement(Index, null)
+	    );
+	  }
+	});
+
+	module.exports = Search;
 
 /***/ }
 /******/ ]);

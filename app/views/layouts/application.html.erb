@@ -3,12 +3,15 @@
 <head>
   <title>BnB</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  <script
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCJSbFzngwRfn1SG3di9FG09DFTphkiu8s">
+  </script>
 </head>
 <body>
 
 <%= yield %>
 
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
 </body>
 </html>

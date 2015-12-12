@@ -4,9 +4,10 @@ var React = require('react'),
     Route = require('react-router').Route,
     App = require('./components/app'),
     Index = require('./components/index'),
+    Search = require('./components/search'),
     BenchStore = require('./stores/bench.js'),
     ApiUtil = require('./util/api_util.js'),
-    routes = <Route path="/" component={Index}></Route>;
+    routes = <Route path="/" component={Search}></Route>;
 
 document.addEventListener("DOMContentLoaded", function () {
   ReactDOM.render(
